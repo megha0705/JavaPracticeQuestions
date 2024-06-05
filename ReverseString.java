@@ -5,8 +5,8 @@ class ReverseString{
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         for(int i = 1; i <= input.length(); i++){
-           System.out.print(input.charAt(input.length() - i ));
-             
+           String reversedString = Character.toString(input.charAt(input.length() - i));
+           System.out.print(reversedString);       
         }
     }
 }
