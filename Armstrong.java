@@ -5,17 +5,20 @@ class Armstrong{
         Scanner sc = new Scanner (System.in);
         int n = sc.nextInt();
         int input = n;
-        int r;
-        int cubes = 0;
-        while(n > 0){
-          r  = n % 10;
-         cubes +=  r * r* r;
-          n = n /10;
-        }
-       if(cubes == input){
+        int m; 
+        int length = String.valueOf(n).length();
+        int power;
+        int result = 0;
+       while(n > 0){
+        m = n % 10;
+        power = (int)Math.pow(m,length);
+        result += power;
+        n = n/ 10;
+       }
+       if(input == result){
         System.out.println("armstrong number");
        }else{
-        System.out.println("not a armstrong number");
-       }    
+        System.out.println("normal number");
+       }
     }
 }
