@@ -8,7 +8,7 @@ class WordCount{
         for(int i = 0; i < input.length(); i++){
            if(input.charAt(i) == ' '){
              wordCount = wordCount + 1;
-           }    
+            }    
         }
  System.out.println(wordCount);
     }
